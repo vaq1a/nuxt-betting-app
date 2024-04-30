@@ -1,0 +1,30 @@
+.chat-form {
+  position: relative;
+  background-color: $color-accent-90;
+  padding: 2rem 2.4rem;
+
+  &__togglers {
+    margin-bottom: 0.8rem;
+  }
+
+  &__snow {
+    position: absolute;
+    top: -0.8rem;
+
+    &--left {
+      width: 6.9rem;
+      height: 2.7rem;
+      left: 0;
+    }
+
+    &--right {
+      width: 7.4rem;
+      height: 2.4rem;
+      right: 0;
+    }
+  }
+
+  &__rules {
+    margin-top: 1.4rem;
+  }
+}

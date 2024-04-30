@@ -1,5 +1,39 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  srcDir: "./src/"
+
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+
+  srcDir: "./src/",
+  css: ["~/assets/styles/global.scss"],
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/styles/vars/_vars.scss" as *;'
+        }
+      }
+    }
+  },
+
+  modules: ["@nuxt/image"],
+  image: {
+    format: ['avif', 'webp', 'jpg', 'png'],
+    densities: [1, 2],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    }
+  }
 })
