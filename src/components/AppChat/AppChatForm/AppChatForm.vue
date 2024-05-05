@@ -3,18 +3,13 @@
     <AppChatTogglers class="chat-form__togglers" />
     <AppChatFormField />
     <AppChatRules />
-    <NuxtPicture
-        :imgAttrs="{
-          style: 'width: 100%;height: 100%;object-fit: cover;'
-        }"
-        class="chat-form__snow chat-form__snow--left snow" format="avif,webp,png"
-        src="/images/snow-1.png"
+    <DecorativeSnow
+        :image-index="1"
+        class="chat-form__snow chat-form__snow--left"
     />
-    <NuxtPicture
-        :imgAttrs="{
-          style: 'width: 100%;height: 100%;object-fit: cover;'
-        }"        class="chat-form__snow chat-form__snow--right snow" format="avif,webp,png"
-        src="/images/snow-2.png"
+    <DecorativeSnow
+        :image-index="2"
+        class="chat-form__snow chat-form__snow--right"
     />
   </div>
 </template>

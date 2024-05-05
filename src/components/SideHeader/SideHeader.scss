@@ -1,0 +1,14 @@
+.side-header {
+  background-color: $color-primary;
+
+  &__link-logo {
+    display: inline-block;
+    background-color: $color-accent-100;
+    padding: 2rem;
+  }
+
+  &__navigation {
+    height: calc(100vh - 12.1rem);
+    overflow-y: auto;
+  }
+}

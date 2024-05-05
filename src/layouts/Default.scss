@@ -1,0 +1,34 @@
+.layout {
+  &__main {
+    width: 119.2rem;
+  }
+
+  &__chat {
+    width: 32rem;
+    height: 100vh;
+    border-left: 1px solid $color-border;
+  }
+}
+
+.main {
+  &__header {
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+.wrapper {
+  &__side-header {
+    width: 8.8rem;
+    height: 100%;
+    border-right: 1px solid $color-border;
+  }
+}
+
+.content {
+  &__main-part {
+    padding: 3.4rem;
+    height: calc(100vh - 12.1rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

@@ -1,1 +1,2 @@
-export const ASSETS_PATH = '~/assets/images/'
+export const INDEX_PATH = '/'
+export const ASSETS_IMAGES_PATH = '/images/'

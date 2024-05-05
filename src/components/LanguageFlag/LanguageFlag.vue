@@ -4,7 +4,7 @@
       :imgAttrs="{
         style: 'width: 100%;height: 100%;object-fit: cover;'
       }"
-      :src="`/images/flag-${currentLang}.png`"
+      :src="`${ASSETS_IMAGES_PATH}flag-${currentLang}.png`"
       class="togglers__flag flag"
       format="avif,webp,png"
   />
@@ -14,6 +14,7 @@
 import type {PropType} from "vue";
 import type {FlagSizes} from "~/types/flagSizes";
 import type {ChatFlagLanguages} from "~/types/chatFlags";
+import {ASSETS_IMAGES_PATH} from "~/constants/config";
 
 const props = defineProps({
   size: {

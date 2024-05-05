@@ -1,0 +1,16 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.3rem;
+    color: $color-accent-55;
+  }
+}

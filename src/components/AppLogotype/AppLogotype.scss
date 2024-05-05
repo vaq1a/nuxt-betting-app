@@ -1,0 +1,13 @@
+.logotype {
+  display: block;
+
+  &--md {
+    width: 16.4rem;
+    height: 4.311rem;
+  }
+
+  &--sm {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}

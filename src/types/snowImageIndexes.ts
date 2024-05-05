@@ -1,0 +1,1 @@
+export type SnowImageIndexes = 1 | 2
