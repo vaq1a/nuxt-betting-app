@@ -1,0 +1,15 @@
+.navigation-item {
+  &__link {
+    display: flex;
+    color: $color-accent-55;
+
+    &--active {
+      color: $color-active-60;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
