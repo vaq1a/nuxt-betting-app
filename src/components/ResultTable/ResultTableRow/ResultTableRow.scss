@@ -1,0 +1,86 @@
+.result-table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+    &--broad-indent {
+      padding: 2rem;
+    }
+
+    &--narrow-indent {
+      padding: 1.1rem;
+    }
+  }
+
+  &__rivals {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-oswald;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-dark-10;
+  }
+
+  &__price {
+    font-family: $font-segoe-ui;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1.5rem;
+    color: $color-light;
+  }
+
+  &__status {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-active-60;
+  }
+
+  &__text-info {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark-10;
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    &--light {
+      color: $color-light;
+    }
+
+    &--caustic {
+      color: $color-caustic;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark-10;
+  }
+}

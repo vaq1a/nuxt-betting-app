@@ -1,0 +1,49 @@
+.banners-slider {
+  position: relative;
+  min-height: 16.9rem;
+  width: 100%;
+  background-color: $color-accent-95;
+  aspect-ratio: 6/1;
+
+  &__slide {
+    transition: opacity 100ms;
+
+    &.swiper-slide-prev,
+    &.swiper-slide-next {
+      opacity: 0;
+    }
+  }
+
+  &__snow {
+    position: absolute;
+    z-index: 3;
+
+    &--top-left {
+      width: 33.8rem;
+      height: 6.9rem;
+      top: -2.4rem;
+      left: 1.6rem;
+    }
+
+    &--top-right {
+      width: 15.2rem;
+      height: 7.1rem;
+      top: -2.4rem;
+      right: 3rem;
+    }
+
+    &--bottom-left {
+      width: 14.5rem;
+      height: 4.1rem;
+      bottom: -2.4rem;
+      left: 0;
+    }
+
+    &--bottom-right {
+      width: 20.4rem;
+      height: 4.4rem;
+      bottom: -2.4rem;
+      right: 0;
+    }
+  }
+}

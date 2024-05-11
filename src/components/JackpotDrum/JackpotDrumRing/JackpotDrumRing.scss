@@ -1,0 +1,10 @@
+.jackpot-drum-ring {
+  display: block;
+  width: 44rem;
+  min-width: 44rem;
+  height: 44rem;
+
+  &--spin-animation {
+    animation: spin 6s linear infinite;
+  }
+}

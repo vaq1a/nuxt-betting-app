@@ -9,7 +9,7 @@ export const HEADER_NAVIGATION: HeaderNavigationItem[] = [
     {
         id: 2,
         title: 'FREE CASE',
-        path: '/'
+        path: '/free-case'
     },
     {
         id: 3,

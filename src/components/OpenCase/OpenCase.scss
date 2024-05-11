@@ -1,0 +1,103 @@
+.open-case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;
+  padding: 2rem;
+  background-image: image-set(
+                  "/images/open-cases-cloud.webp" type("image/webp") 1x,
+                  "/images/open-cases-cloud-2x.webp" type("image/webp") 2x,
+                  "/images/open-cases-cloud.png" type("image/png") 1x,
+                  "/images/open-cases-cloud-2x.png" type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.3rem;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  &--first {
+    &:after {
+      backdrop-filter: hue-rotate(30deg);
+    }
+  }
+
+  &--second {
+    &:after {
+      backdrop-filter: hue-rotate(90deg);
+    }
+  }
+
+  &--third {
+    &:after {
+      backdrop-filter: hue-rotate(150deg);
+    }
+  }
+
+  &--fourth {
+    &:after {
+      backdrop-filter: hue-rotate(210deg);
+    }
+  }
+
+  &--fifth {
+    &:after {
+      backdrop-filter: hue-rotate(300deg);
+    }
+  }
+
+  &__title {
+    font-family: $font-segoe-ui;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: $color-light;
+
+    &--no-filter {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    &-wrapper {
+      display: block;
+      width: 12.5rem;
+      min-width: 12.5rem;
+      height: 9.6rem;
+
+      &--no-filter {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark-25;
+
+    &--no-filter {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__lock-icon {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.6rem;
+  }
+}

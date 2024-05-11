@@ -1,0 +1,19 @@
+<template>
+  <NuxtPicture
+      :imgAttrs="{
+        style: 'height: 100%; width: 100%; object-fit: cover;'
+      }"
+      :src="`${ASSETS_IMAGES_PATH}drum.png`"
+      class="jackpot-drum-foundation"
+      format="avif,webp,png"
+  />
+</template>
+
+<script lang="ts" setup>
+
+import {ASSETS_IMAGES_PATH} from "~/constants/config";
+</script>
+
+<style lang="scss" scoped>
+  @import './JackpotDrumFoundation';
+</style>

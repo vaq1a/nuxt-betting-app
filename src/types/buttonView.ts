@@ -1,0 +1,1 @@
+export type ButtonView = 'full-width' | 'filled' | 'filled-dark' | 'transparent-light' | 'transparent-dark' | 'dark-without-outline'

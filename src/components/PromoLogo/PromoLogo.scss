@@ -1,0 +1,15 @@
+.promo-logo {
+  display: block;
+
+  &--xs {
+    width: 3.2rem;
+    min-width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  &--md {
+    width: 4.8rem;
+    min-width: 4.8rem;
+    height: 4.8rem;
+  }
+}

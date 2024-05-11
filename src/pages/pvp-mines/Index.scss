@@ -1,0 +1,13 @@
+.content {
+  &__pvp-mines {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.pvp-mines {
+  &__title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}

@@ -18,7 +18,7 @@ export const NAVIGATION: NavigationItem[] = [
     },
     {
         id: 4,
-        path: '/',
+        path: '/free-case',
         iconName: 'star'
     },
 ]
