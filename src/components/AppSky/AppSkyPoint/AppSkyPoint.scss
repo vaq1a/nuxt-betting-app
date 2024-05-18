@@ -1,0 +1,35 @@
+.sky-point {
+  position: relative;
+  width: 2.4rem;
+  min-width: 2.4rem;
+  height: 1.9rem;
+
+  &__icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $font-oswald;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    &--extreme {
+      color: $color-accent-37;
+    }
+
+    &--between {
+      color: $color-dark-30;
+    }
+
+    &--center {
+      color: $color-dark-50;
+    }
+  }
+}

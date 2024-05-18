@@ -1,0 +1,88 @@
+.win-card {
+  position: relative;
+  display: flex;
+  padding: 1.6rem;
+  gap: 1.6rem;
+  background-image: image-set(
+                  "/images/win-card-bg.webp" type("image/webp") 1x,
+                  "/images/win-card-bg-2x.webp" type("image/webp") 2x,
+                  "/images/win-card-bg.png" type("image/png") 1x,
+                  "/images/win-card-bg-2x.png" type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__image-wrapper {
+    display: block;
+    width: 4.8rem;
+    min-width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  &__overview,
+  &__state {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+
+  &__name {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-light;
+  }
+
+  &__points {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-secondary;
+  }
+
+  &__status {
+    font-family: $font-oswald;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-active-60;
+
+    &-icon {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.6rem;
+    }
+  }
+
+  &__coefficient {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-light;
+  }
+
+  &__snow {
+    position: absolute;
+    top: -1.7rem;
+
+    &--first {
+      width: 7.4rem;
+      height: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--second {
+      width: 6.1rem;
+      height: 3.1rem;
+      right: 0;
+    }
+  }
+}

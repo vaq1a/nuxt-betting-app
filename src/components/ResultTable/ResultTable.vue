@@ -1,6 +1,6 @@
 <template>
   <div class="result-table">
-    <ResultTableHeader class="result-table__header" />
+<!--    <ResultTableHeader class="result-table__header" />-->
     <ResultTableRow class="result-table__row" indentType="broad" />
     <ResultTableRow class="result-table__row" indentType="broad" />
     <ResultTableRow class="result-table__row" indentType="broad" />

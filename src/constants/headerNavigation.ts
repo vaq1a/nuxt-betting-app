@@ -13,7 +13,7 @@ export const HEADER_NAVIGATION: HeaderNavigationItem[] = [
     },
     {
         id: 3,
-        title: 'RAKEBACK',
-        path: 'rakeback'
+        title: 'UPGRADE',
+        path: 'upgrade'
     }
 ]

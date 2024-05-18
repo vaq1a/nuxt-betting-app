@@ -1,0 +1,23 @@
+.mines-slots-opponent {
+  display: inline-block;
+  position: relative;
+
+  &__balls {
+    font-family: $font-oswald;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: $color-light;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__image-wrapper {
+    display: block;
+    width: 9.6rem;
+    min-width: 9.6rem;
+    height: 13.2rem;
+  }
+}

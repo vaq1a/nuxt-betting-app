@@ -6,6 +6,19 @@
     gap: 0.8rem;
     padding: 1.2rem;
     position: relative;
+
+    &--active {
+      .side-header-navigation-item {
+        &__title {
+          color: $color-active-100;
+        }
+
+        &__price {
+          color: $color-dark-100;
+          background-color: $color-active-100;
+        }
+      }
+    }
   }
 
   &__icon {

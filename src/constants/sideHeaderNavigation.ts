@@ -11,22 +11,28 @@ export const SIDE_HEADER_NAVIGATION: SideHeaderNavigationItem[] = [
         id: 2,
         iconName: 'jackpot',
         title: 'jackpot',
-        path: '/jackpot',
+        path: 'jackpot',
         price: '$ 0',
     },
     {
         id: 3,
         iconName: 'pvpMines',
         title: 'pvp mines',
-        path: '/pvp-mines',
+        path: 'pvp-mines',
         price: '$ 0',
     },
     {
         id: 4,
         iconName: 'coinflip',
         title: 'coinflip',
-        path: '/coinflip',
+        path: 'coinflip',
         price: '$ 100',
+    },
+    {
+        id: 5,
+        iconName: 'mines',
+        title: 'mines',
+        path: 'mines',
         label: 'new!',
     }
 ]

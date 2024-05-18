@@ -4,10 +4,11 @@
   >
     <NuxtLink
         :to="item.path"
+        active-class="side-header-navigation-item__link--active"
         class="side-header-navigation-item__link"
     >
       <IconLoader
-          :name="item.iconName"
+          :name="activeIcon"
           class="side-header-navigation-item__icon"
       />
       <span class="side-header-navigation-item__title">
@@ -34,11 +35,22 @@ import IconLoader from "~/components/IconLoader/IconLoader.vue";
 import type {PropType} from "vue";
 import type {SideHeaderNavigationItem} from "~/types/SideHeaderNavigationItem";
 
-defineProps({
+const route = useRoute()
+
+const props = defineProps({
   item: {
     type: Object as PropType<SideHeaderNavigationItem>,
     required: true
   }
+})
+
+const { item } = toRefs(props)
+
+const isRouteActive = computed(() => route.name === unref(item)?.path)
+const activeIcon = computed(() => `${unref(item)?.iconName}${unref(isRouteActive) ? '-active' : ''}`)
+
+watch(isRouteActive, () => {
+  console.log('activeIcon', unref(activeIcon))
 })
 </script>
 

@@ -3,22 +3,22 @@ import type {NavigationItem} from "~/types/navigationItem";
 export const NAVIGATION: NavigationItem[] = [
     {
         id: 1,
-        path: '/',
+        path: '/free-case',
         iconName: 'shield'
     },
     {
         id: 2,
-        path: '/',
+        path: '/mines',
         iconName: 'headphones'
     },
     {
         id: 3,
-        path: '/',
+        path: '/plinko',
         iconName: 'users'
     },
     {
         id: 4,
-        path: '/free-case',
+        path: '/jackpot',
         iconName: 'star'
     },
 ]
