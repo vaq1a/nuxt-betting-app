@@ -2,6 +2,7 @@
   <header class="header">
     <SocialLinks class="header__social-links" />
     <AppHeaderNavigation class="header__navigation" />
+    <AuthLogout class="header__auth-logout-button" />
   </header>
 </template>
 

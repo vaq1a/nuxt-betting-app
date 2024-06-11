@@ -3,14 +3,17 @@ import svgLoader from 'vite-svg-loader'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
   components: [
     {
       path: '~/components',
       pathPrefix: false,
     },
   ],
-
+  runtimeConfig: {
+    public: {
+      backendUrl: process.env.BACKEND_URL,
+    }
+  },
   srcDir: "./src/",
   css: ["~/assets/styles/global.scss"],
 
@@ -26,8 +29,9 @@ export default defineNuxtConfig({
       }
     }
   },
-
-  modules: ["@nuxt/image"],
+  modules: [
+    "@nuxt/image",
+  ],
   image: {
     format: ['avif', 'webp', 'jpg', 'png'],
     densities: [1, 2],

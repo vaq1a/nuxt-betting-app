@@ -8,7 +8,13 @@
         class="side-header-navigation-item__link"
     >
       <IconLoader
-          :name="activeIcon"
+          v-if="isRouteActive"
+          :name="`${item.iconName}-active`"
+          class="side-header-navigation-item__icon"
+      />
+      <IconLoader
+          v-else
+          :name="item.iconName"
           class="side-header-navigation-item__icon"
       />
       <span class="side-header-navigation-item__title">
@@ -47,11 +53,6 @@ const props = defineProps({
 const { item } = toRefs(props)
 
 const isRouteActive = computed(() => route.name === unref(item)?.path)
-const activeIcon = computed(() => `${unref(item)?.iconName}${unref(isRouteActive) ? '-active' : ''}`)
-
-watch(isRouteActive, () => {
-  console.log('activeIcon', unref(activeIcon))
-})
 </script>
 
 <style lang="scss" scoped>

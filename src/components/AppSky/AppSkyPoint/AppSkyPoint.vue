@@ -31,19 +31,23 @@ const additionalClass = computed(() => ({
 
 const currentIcon = computed(() => {
   if (!Boolean(unref(currentDisposition))) {
+    console.log('default')
     return 'paperBlue'
   }
 
   if (unref(currentDisposition) === 'between') {
+    console.log('between')
     return 'paperPink'
   }
 
   if (unref(currentDisposition) === 'extreme') {
+    console.log('extreme')
     return 'paperRed'
   }
-
+  console.log('paperBlue')
   return  'paperBlue'
 })
+console.log('currentIcon', unref(currentIcon))
 </script>
 
 <style lang="scss" scoped>
