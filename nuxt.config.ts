@@ -11,12 +11,11 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      backendUrl: process.env.BACKEND_URL,
+      backendUrl: process.env.VITE_BACKEND_URL,
     }
   },
   srcDir: "./src/",
   css: ["~/assets/styles/global.scss"],
-
   vite: {
     plugins: [
       svgLoader({})
