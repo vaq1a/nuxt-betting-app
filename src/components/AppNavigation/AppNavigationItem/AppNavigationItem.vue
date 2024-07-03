@@ -3,7 +3,7 @@
       class="navigation-item"
   >
     <NuxtLink
-        :to="item.path"
+        :to="localePath(item.path)"
         active-class="navigation-item__link--active"
         class="navigation-item__link"
     >
@@ -19,6 +19,8 @@
 import IconLoader from "~/components/IconLoader/IconLoader.vue";
 import type {PropType} from "vue";
 import type {NavigationItem} from "~/types/navigationItem";
+
+const localePath = useLocalePath()
 
 defineProps({
   item: {

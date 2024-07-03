@@ -1,7 +1,7 @@
 <template>
   <li class="header-navigation-item">
     <NuxtLink
-        :to="item.path"
+        :to="localePath(item.path)"
         active-class="header-navigation-item__link--active"
         class="header-navigation-item__link"
     >
@@ -13,6 +13,8 @@
 <script lang="ts" setup>
 import type {PropType} from "vue";
 import type {HeaderNavigationItem} from "~/types/headerNavigationItem";
+
+const localePath = useLocalePath()
 
 defineProps({
   item: {

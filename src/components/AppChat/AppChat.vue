@@ -2,10 +2,10 @@
   <div class="layout__chat chat">
     <div class="chat__header">
       <h4 class="chat__title">
-        live chat
+        {{ $t('liveChat') }}
       </h4>
       <p class="chat__users-count">
-        35 online
+        35 {{ $t('online') }}
       </p>
     </div>
     <div class="chat__body">

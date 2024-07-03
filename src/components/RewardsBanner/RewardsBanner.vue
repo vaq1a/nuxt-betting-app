@@ -2,10 +2,10 @@
   <div class="rewards-banner">
     <div class="rewards-banner__content">
       <h3 class="rewards-banner__title">
-        DAILY CASES
+        {{ $t('dailyCases') }}
       </h3>
       <p class="rewards-banner__description">
-        The daily free case is available for everyone. Deposit throughout the day to open up each deposit-based case.
+        {{ $t('dailyCasesDescription') }}
       </p>
     </div>
     <NuxtPicture

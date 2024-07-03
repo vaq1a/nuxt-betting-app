@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      backendUrl: process.env.BACKEND_URL,
+      backendUrl: process.env.VITE_BACKEND_URL,
     }
   },
   srcDir: "./src/",
@@ -31,7 +31,18 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/image",
+    '@nuxtjs/i18n'
   ],
+  i18n: {
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    defaultLocale: "en",
+    locales: [
+      { code: "ru", iso: "ru-RU", file: "ru.json"},
+      { code: "en", iso: "en-US", file: "en.json" },
+    ],
+  },
   image: {
     format: ['avif', 'webp', 'jpg', 'png'],
     densities: [1, 2],

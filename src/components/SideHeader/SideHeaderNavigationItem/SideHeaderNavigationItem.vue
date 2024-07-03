@@ -3,7 +3,7 @@
       class="side-header-navigation-item"
   >
     <NuxtLink
-        :to="item.path"
+        :to="localePath(item.path)"
         active-class="side-header-navigation-item__link--active"
         class="side-header-navigation-item__link"
     >
@@ -42,6 +42,7 @@ import type {PropType} from "vue";
 import type {SideHeaderNavigationItem} from "~/types/SideHeaderNavigationItem";
 
 const route = useRoute()
+const localePath = useLocalePath()
 
 const props = defineProps({
   item: {
